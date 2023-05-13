@@ -1,0 +1,110 @@
+.main {
+	display: flex;
+	flex-direction: row;
+	margin: 0 -24px;
+}
+
+.main__title {
+	font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 12px;
+}
+
+.main__github {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 24px 0;
+}
+
+.main__github-link {
+	position: relative;
+	padding-left: 24px;
+	margin-bottom: 24px;
+}
+.main__github-link::before {
+	content: '';
+	position: absolute;
+	background-image: url('../images/github-icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 24px;
+	height: 24px;
+	left: 0px;
+}
+
+.main__skills {
+	min-width: 290px;
+	padding: 24px;
+}
+
+.main__skill {
+	font-size: 18px;
+}
+
+.main__skill:not(:last-child) {
+	margin-bottom: 6px;
+}
+
+.main__profile {
+	padding: 24px;
+}
+
+.main__info {
+	margin-bottom: 24px;
+}
+
+.main__position {
+	font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+}
+
+.main__date {
+	text-transform: uppercase;
+}
+
+.main .main__list {
+	padding-left: 20px;
+	margin: 12px 0 24px 0;
+}
+
+.main__degree {
+	font-family: 'Roboto Regular', sans-serif;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 767px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main__github {
+		margin: 0;
+	}
+
+	.main__github-link {
+		padding: 12px 24px 12px 24px;
+	}
+
+	.main__github-link, .main__title, .main__skill:not(:last-child) {
+		margin-bottom: 0;
+	}
+
+	/* .main__title {
+		margin-bottom: 0;
+	}
+
+	.main__skill:not(:last-child) {
+    margin-bottom: 0;
+	} */
+
+	.main__skills {
+		padding: 0 24px;
+	}
+
+	.main .main__list {
+    font-size: 14px;
+	}
+}
