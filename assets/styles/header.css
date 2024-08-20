@@ -44,7 +44,7 @@
   .header {
 		flex-direction: column;
 		margin-bottom: 12px;
-		padding: 12px;
+		padding: 12px 12px 6px;
 	}
 
 	.header__info {
@@ -53,7 +53,7 @@
 
 	.header__main {
 		justify-content: center;
-		margin-bottom: 12px;
+		margin-bottom: 6px;
 	}
 
 	.header__name {
